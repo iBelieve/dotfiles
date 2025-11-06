@@ -1,0 +1,15 @@
+#!/usr/bin/env fish
+# vscode: language=shellscript
+# fish_plugins hash: {{ include "private_dot_config/private_fish/fish_plugins" | sha256sum }}
+
+if not type -q fisher
+    echo "Error: Fisher is not installed."
+    exit 1
+end
+
+if not test -f ~/.config/fish/fish_plugins
+    echo "No fish_plugins file found."
+end
+
+echo "Reinstalling Fisher plugins..."
+fisher update

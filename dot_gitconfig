@@ -1,0 +1,6 @@
+# vscode: language=properties
+[init]
+	defaultBranch = master
+[user]
+	name = Michael Spencer
+	email = sonrisesoftware@gmail.com

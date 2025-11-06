@@ -1,0 +1,7 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+# vscode: language=shellscript
+# Brewfile hash: {{ include "Brewfile" | sha256sum }}
+
+brew bundle --file={{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}
+{{ end -}}
