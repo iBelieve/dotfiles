@@ -1,3 +1,5 @@
 command = /opt/homebrew/bin/fish
 
-font-family = "MesloLGS Nerd Font"
+font-family = "JetBrains Mono Nerd Font"
+
+keybind = shift+enter=text:\x1b\r
