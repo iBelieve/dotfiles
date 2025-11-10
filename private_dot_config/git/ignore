@@ -1,2 +1,3 @@
 # vscode: language=ignore
 .DS_Store
+.claude/settings.local.json
