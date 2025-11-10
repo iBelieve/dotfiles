@@ -1,2 +1,5 @@
 # vscode: language=shellscript
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Seems to be necessary for VSCode Dev Containers to pick up the SSH keys
+ssh-add ~/.ssh/id_ed25519
